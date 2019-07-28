@@ -77,5 +77,9 @@ public class Utilities extends BaseClass
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
 	}
+	public void demo_Method()
+	{
+		System.out.println("This is demo method to check git repository");
+	}
 
 }
