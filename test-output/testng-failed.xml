@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.qa.Utils.ExtentReportListner"/>
+  </listeners>
+  <test thread-count="5" name="Test2(failed)" parallel="tests">
+    <parameter name="BrowserName" value="chrome"/>
+    <classes>
+      <class name="com.qa.TestCases.LogINPageTest">
+        <methods>
+          <include name="validate_LogIN"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.qa.TestCases.LogINPageTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" name="Test3(failed)" parallel="tests">
+    <parameter name="BrowserName" value="chrome"/>
+    <classes>
+      <class name="com.qa.TestCases.MyAccountTest">
+        <methods>
+          <include name="Upload_Profile_Image"/>
+          <include name="beforeMethod"/>
+          <include name="Submiting_Form"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.qa.TestCases.MyAccountTest -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="5" name="Test1(failed)" parallel="tests">
+    <parameter name="BrowserName" value="chrome"/>
+    <classes>
+      <class name="com.qa.TestCases.HomePageTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="Logo_Verification"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.qa.TestCases.HomePageTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
